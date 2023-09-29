@@ -1,0 +1,673 @@
+@font-face {
+  src: url(fonts/Futura\ Extra\ Bold\ Condensed.otf);
+  font-family: 'futura extra bold condensed';
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: none;
+}
+/* Header contents main */
+
+.logo img {
+  width: 75px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.logo img:hover {
+  opacity: 50%;
+  transition: 0.15s ease-in-out;
+}
+
+.search-bar img {
+  width: 45px;
+  height: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.bag-icon img {
+  width: 50px;
+  height: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.account-icon img {
+  width: 45px;
+  height: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.nav-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.nav-bar-mobile-tablet-contents {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  z-index: 999;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.nav-icons {
+  display: flex;
+}
+
+/* Main */
+
+main {
+  width: 100%;
+}
+
+/* Promotional Slider non-fuctional */
+
+.new-arrivals {
+  font-weight: 100;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 5px;
+}
+
+.shop-now a {
+  color: #000;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.shop-now {
+  display: grid;
+  place-items: center;
+}
+
+.promotion-banner-nike-wesbite-main {
+  max-width: 100%;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(236, 236, 236);
+}
+
+.promotional-message-wrapper {
+  padding-top: 10px;
+}
+
+/* New of fall section all  */
+
+.new-fall-heading {
+  font-family: 'futura extra bold condensed';
+  font-weight: 100;
+  font-size: 45px;
+  padding-bottom: 20px;
+  width: fit-content;
+}
+
+.new-fall-paragraph {
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 20px;
+  width: fit-content;
+}
+
+.new-fall-image-container {
+  width: 100%;
+  padding-bottom: 10px;
+} 
+
+.new-fall-shop-btn {
+  max-width: 80px;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px
+}
+
+.new-fall-nike-website-main-inner-wrapper {
+  width: 100%;
+  display: grid;
+  padding: 0px 6%;
+}
+
+/* trending section */
+
+.trending-nike-website-main {
+  margin-top: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.trending-nike-website-main-inner-wrapper {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  padding: 0px 6%;
+}
+
+.trending-heading {
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.trending-slider-image {
+  padding-bottom: 15px;
+}
+
+.trending-slider-heading {
+  font-weight: 100;
+  font-size: 15px;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+
+.trending-slider-descript {
+  font-size: 20px;
+  width: fit-content;
+}
+
+.trending-slider-main {
+  display: flex;
+  gap: 15px;
+  overflow: auto;
+  padding: 0px 6%;
+}
+
+.trending-slider-main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Featured section */
+
+.featured-contents {
+  max-width: 100%;
+  width: 100%;
+  height: 550px;
+  transform: scale(1);
+}
+
+.featured-nike-website-main-inner-wrapper {
+  width: 100%;
+  display: grid;
+  padding: 0px 6%;
+  gap: 10px;
+}
+
+.featured-contents-main {
+  width: 100%;
+  display: grid;
+  padding: 0px 6%;
+  gap: 10px;
+}
+
+.featured-contents-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -999;
+}
+
+.featured-text-heading {
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+.featured-text-descript {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
+.featured-text-shop-btn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  max-width: 100px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.featured-heading {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.featured-nike-website-main {
+  margin-top: 100px;
+}
+
+.featured-text-container {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  bottom: 0;
+}
+
+/* Always Iconic section */
+
+.always-iconic-nike-website-main {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+.always-iconic {
+  font-weight: 100;
+  padding: 0px 6%;
+  padding-bottom: 30px;
+}
+
+.always-iconic-images {
+  padding-bottom: 10px;
+}
+
+.always-iconic-shoe-type {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.slider-inner-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 0px 6%;
+  overflow: auto;
+}
+
+.slider-inner-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Shop By Sport section */
+
+.shop-by-sport-nike-website-main {
+  margin-top: 100px;
+}
+
+.shop-sport-nike-main-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4%;
+}
+.shop-by-sport {
+  font-weight: 100;
+}
+
+.shop-by-sport-line-separation {
+  width: 425px;
+  height: 1px;
+  background-color: rgb(224, 223, 223);
+}
+
+.sport {
+  display: grid;
+  gap: 15px;
+}
+
+.sport-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 6%;
+  gap: 20px;
+}
+
+.sport-type-main {
+  padding-top: 20px;
+}
+
+.sport-type-image {
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  max-width: 100px;
+}
+
+.sport-name {
+  font-weight: 100;
+  font-size: 15px;
+  color: rgb(128, 128, 128);
+  padding-bottom: 5px;
+}
+
+.sport-message {
+  font-size: 16px;
+}
+
+
+
+/* New Fall Styles */
+
+.new-fall-styles {
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.new-fall-style-nike-website-main {
+  margin-top: 100px;
+}
+
+.newfall-style-nike-website-main-inner-wrapper {
+  padding: 0px 6%;
+}
+
+.slider-img-container {
+  display: grid;
+}
+
+.slider {
+  transform: scale(1);
+}
+
+
+
+.lock-icon {
+  text-align: center;
+}
+
+
+.lock-icon-container {
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.lock-icon-btn {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 100px;
+}
+
+.member-access {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(170, 131, 117);
+  padding-bottom: 7px;
+}
+
+.new-fall-styles-shoe-name {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.slider-texts {
+  padding-top: 10px;
+}
+
+.new-fall-style-category {
+  color: rgb(155, 155, 155);
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 7px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.sliders {
+  display: flex;
+  gap: 15px;
+}
+
+.slider-inner-wrapper {
+  overflow: auto;
+}
+
+/* Nike Membership section */
+
+.nike-membership-heading {
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.nike-memberhship-nike-wesbite-main {
+  margin-top: 100px;
+}
+
+.nike-memberhsip-nike-website-main-inner-wrapper {
+  width: 100%;
+  display: grid;
+  padding: 0px 6%;
+}
+
+.become-member {
+  transform: scale(1);
+  max-width: 100%;
+  width: 100%;
+  height: 600px;
+  max-height: 600px;
+}
+
+.become-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -999;
+}
+
+.become-member-heading {
+  color: rgb(255, 255, 255);
+  font-family: 'futura extra bold condensed';
+  font-weight: 100;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.become-member-message {
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+}
+
+.become-member-btns button {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.become-member-texts {
+ position: absolute;
+ top: 65%;
+ left: 6%;
+}
+
+.extra-member-contents-grid-wrapper {
+  padding-top: 10px;
+}
+
+
+.extra-member-contents-grid-wrapper-inner-wrapper {
+  max-width: 100%;
+  width: 100%;
+  transform: scale(1);
+  height: 600px;
+  max-height: 600px;
+}
+
+.extra-member-images {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+.extra-img-message {
+  font-size: 25px;
+}
+
+.extra-img-texts-container-wrapper {
+  position: absolute;
+  top: 85%;
+  left: 6%;
+}
+
+/* Drop Downs Section */
+
+.drop-downs-nike-website-main {
+  margin-top: 100px;
+}
+.drop-downs-nike-webite-main-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 1%;
+}
+
+.drop-down-list li {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.drop-down-list li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.drop-down-list {
+  display: grid;
+  gap: 30px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 40px;
+  max-width: 100%;
+  width: 100%;
+  background-color: #0d0d0d;
+  height: 70dvh;
+}
+
+.footer-list {
+  display: grid;
+  gap: 15px;
+  padding-bottom: 10px;
+  padding: 30px 6%;
+}
+
+.footer-list li {
+  list-style: none;
+}
+
+.footer-list li a {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.footer-line-separation {
+  margin: 2%;
+  width: 95%;
+  height: 1px;
+  background-color: #363636;
+}
+
+.footer-list-two {
+  list-style: none;
+}
+
+.footer-list-two li a {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.get-help-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6%;
+}
+
+.plus-icon-bar1, .plus-icon-bar2 {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.plus-icon-bar2 {
+  transform: translate(-50, -50);
+}
+
+.about-nike-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 6%;
+}
+
+.arrow-scrollbar-btns-shop-sport button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 150px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.arrow-scrollbar-btns-shop-sport {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
